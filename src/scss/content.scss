@@ -1,0 +1,9 @@
+@use './common' as *;
+@use './mixin' as *;
+@use './variable' as *;
+
+#wrap>div{
+    width: 1300px;
+    background-color: yellow;
+    margin: 0 auto;
+}

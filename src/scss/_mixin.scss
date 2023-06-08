@@ -1,0 +1,10 @@
+@use './variable';
+
+@mixin margin($bottom:0, $top:0){
+    margin: $bottom auto $top;
+}
+@mixin layout($justify:center, $direction: row){
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+}

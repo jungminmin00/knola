@@ -75,8 +75,41 @@ export default function Content(){
                         </figure>
                     </li>
                     {/* 2 */}
+                    <li>
+                        <figure>
+                            <img src='' alt=''/>
+                            <figcaption>
+                                <dl>
+                                    <dt></dt>
+                                    <dd></dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
                     {/* 3 */}
+                    <li>
+                        <figure>
+                            <img src='' alt=''/>
+                            <figcaption>
+                                <dl>
+                                    <dt></dt>
+                                    <dd></dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
                     {/* 4 */}
+                    <li>
+                        <figure>
+                            <img src='' alt=''/>
+                            <figcaption>
+                                <dl>
+                                    <dt></dt>
+                                    <dd></dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
                 </ul>
             </div>
             <div className='banner'>
@@ -94,7 +127,60 @@ export default function Content(){
                     </figcaption>
                 </figure>
             </div>
-        
+            <div className='newProducts'>
+                <h3>new Products</h3>
+                <p>크놀라의 새로운 상품을 만나보세요</p>
+                <ul>
+                    {/* 1 */}
+                    <li>
+                        <figure>
+                            <img src='' alt=''/>
+                            <figcaption>
+                                <dl>
+                                    <dt></dt>
+                                    <dd></dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    {/* 2 */}
+                    <li>
+                        <figure>
+                            <img src='' alt=''/>
+                            <figcaption>
+                                <dl>
+                                    <dt></dt>
+                                    <dd></dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    {/* 3 */}
+                    <li>
+                        <figure>
+                            <img src='' alt=''/>
+                            <figcaption>
+                                <dl>
+                                    <dt></dt>
+                                    <dd></dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    {/* 4 */}
+                    <li>
+                        <figure>
+                            <img src='' alt=''/>
+                            <figcaption>
+                                <dl>
+                                    <dt></dt>
+                                    <dd></dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
         </div>
     );
 }

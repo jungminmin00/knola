@@ -2,7 +2,7 @@ export default function Header(){
     return(
         <header>
             <div id="header">
-                <h1><a href="#"><img src="" alt="" /></a></h1>
+                <h1><a href="#"><img src="./images/logo.png" alt="knola" /></a></h1>
                 <div className="sub">
                     <ul>
                         <li><a href="#">wishlist</a></li>

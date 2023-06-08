@@ -1,7 +1,7 @@
-import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Content from './components/Content';
+import '../scss/main.scss';
+import Footer from './Footer';
+import Header from './Header';
+import Content from '../pages/Content';
 import {AiOutlineUp, AiOutlineDown} from 'react-icons/ai';
 function App() {
   return (

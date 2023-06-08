@@ -1,0 +1,86 @@
+[
+    {
+        "id":0,
+        "name":"시그니처 그래놀라",
+        "price": "11000",
+        "pic":"./imgData/signatureGranola.png"
+    },
+    {
+        "id":1,
+        "name":"건무화과 & 호두 그래놀라",
+        "price": "11000",
+        "pic":"./imgData/figWalnutGranola.png"
+    },
+    {
+        "id":2,
+        "name":"바나나 브레드 그래놀라",
+        "price": "11000",
+        "pic":"./imgData/bananaBreadGranola.png"
+    },
+    {
+        "id":3,
+        "name":"크런치 코코넛 그래놀라",
+        "price": "11000",
+        "pic":"./imgData/crunchyCoconutGranola.png"
+    },
+    {
+        "id":4,
+        "name":"오렌지 크랜베리 그래놀라",
+        "price": "11000",
+        "pic":"./imgData/orangeCranBerryGranola.png"
+    },
+    {
+        "id":5,
+        "name":"피넛버터 그래놀라",
+        "price": "11000",
+        "pic":"./imgData/peanutButterGranola.png"
+    },
+    {
+        "id":6,
+        "name":"솔티드 캬라멜 그래놀라",
+        "price": "11000",
+        "pic":"./imgData/saltedCaramelGranola.png"
+    },
+    {
+        "id":7,
+        "name":"마롱 그래놀라",
+        "price": "19000",
+        "pic":"./imgData/marronsGranola.png"
+    },
+    {
+        "id":8,
+        "name":"피칸피칸",
+        "price": "15000",
+        "pic":"./imgData/pecanPecan.png"
+    },
+    {
+        "id":9,
+        "name":"피칸피칸 미니팩",
+        "price": "3000",
+        "pic":"./imgData/pecanPecan-small.jpg"
+    },
+    {
+        "id":10,
+        "name":"크놀라 스낵보틀",
+        "price": "18900",
+        "pic":"./imgData/snackBottle.jpg"
+    },
+    {
+        "id":11,
+        "name":"크놀라 에코백",
+        "price": "30000",
+        "pic":"./imgData/ecoBag.jpg"
+    },
+    {
+        "id":12,
+        "name":"크놀라 골프공",
+        "price": "25000",
+        "pic":"./imgData/golfBall.jpg"
+    },
+    {
+        "id":13,
+        "name":"크놀라 쇼핑백",
+        "price": "1700",
+        "pic":"./imgData/shoppingBag.jpg"
+    }
+]

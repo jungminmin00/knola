@@ -53,9 +53,9 @@ export default function Footer(){
                     </dd>
                 </dl>
                 <dl>
-                    <dt></dt>
-                    <dd></dd>
-                    <dd></dd>
+                    <dt>BANK</dt>
+                    <dd>**은행 01234-5678</dd>
+                    <dd>예금주 (주)식회사</dd>
                 </dl>
             </div>
         </footer>

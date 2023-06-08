@@ -1,0 +1,10 @@
+@use './common' as *;
+@use './mixin' as *;
+@use './variable' as *;
+
+
+#wrap>footer{
+    width: 1300px;
+    background-color: pink;
+    margin: 0 auto;
+}

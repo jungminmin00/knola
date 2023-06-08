@@ -1,0 +1,14 @@
+@use './common' as *;
+@use './mixin' as *;
+@use './variable' as *;
+
+#wrap>header{
+    width: $content;
+    background-color: pink;
+    @include margin;
+    padding: $basic*3 0;    /* 여백 */
+    h1{
+        text-align: center;
+        
+    }
+}
