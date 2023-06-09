@@ -1,5 +1,30 @@
 @use './header.scss';
 @use './content.scss';
 @use './footer.scss';
+// @use './variable';
 a{ text-decoration: none;}
 
+#scroll{
+    // position: fixed;
+    position: fixed;
+    z-index: 1000;
+    right: 80px;
+    bottom: 100px;
+    background-color: #444;
+    border-radius: 20px;
+    >div{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        &.top{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);   
+        }
+        p{
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    
+}

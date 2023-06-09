@@ -6,6 +6,9 @@ import {AiOutlineUp, AiOutlineDown} from 'react-icons/ai';
 function App() {
   return (
     <div id="wrap">
+      <div className='bg'>
+            
+      </div>
       <Header />
       <Content />
       <div id='scroll'>

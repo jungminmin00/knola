@@ -8,22 +8,23 @@ export default function Header(){
                         <li><a href="#">wishlist</a></li>
                         <li><a href="#">login</a></li>
                     </ul>
-                    <nav>
-                        <ul>
-                            <li><a href="#">brand</a></li>
-                            <li>
-                                <a href="#">store</a>
-                                <ul>
-                                    <li><a href="#">all</a></li>
-                                    <li><a href="#">granola</a></li>
-                                    <li><a href="#">snack</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">review</a></li>
-                            <li><a href="#">event</a></li>
-                        </ul>
-                    </nav>
                 </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">brand</a></li>
+                        <li className="store">
+                            <a href="#">store</a>
+                            <ul className="hide">
+                            {/* <ul > */}
+                                <li><a href="#">all</a></li>
+                                <li><a href="#">granola</a></li>
+                                <li><a href="#">snack</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">review</a></li>
+                        <li><a href="#">event</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
     );

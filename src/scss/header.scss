@@ -4,11 +4,51 @@
 
 #wrap>header{
     width: $content;
-    background-color: pink;
+    // background-color: pink;
     @include margin;
-    padding: $basic*3 0;    /* 여백 */
+    @include cPadding;
+    @include layout;
     h1{
         text-align: center;
-        
+        margin-bottom: $basic*8;
+    }
+    .sub{
+        position: absolute;
+        right: 410px;
+        top: $basic*8;
+        line-height: $basic*2;
+        a{
+            color: $gray;
+            font-size: 13px;
+        }
+    }
+    nav{
+        >ul{
+            display: flex;
+            >li{
+                padding-left: $big;
+                &:first-child{
+                    padding-left: 0;
+                }    
+                a{
+                    color: $gray;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $gray;
+                }
+                &.store{
+                    ul{
+                        position: absolute;
+                        padding-top: 15px;
+                        li{
+                            padding: $basic 0;
+                            a{
+                                color: $gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
