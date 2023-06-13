@@ -14,14 +14,19 @@ function Dropdown({toggle,sortBy ,onChangeSortBy}){
         </ul>
     );
 }
-export default function Search({sortBy, onChangeSortBy}){
+export default function Search({sortBy, onChangeSortBy, onChangeWord ,word}){
     const [toggle, setToggle] = useState(false);
 
     return(
         <div id="search">
             <div>
                 <AiOutlineSearch />
-                <input type="text" placeholder="상품 이름 입력" />
+                <input 
+                    type="text" 
+                    placeholder="상품 이름 입력" 
+                    value={word}
+                    onChange = {(e) => onChangeWord(e.target.value)}
+                />
             </div>
             <button type="button"
                 onClick={() => setToggle(!toggle)}
