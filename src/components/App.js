@@ -3,14 +3,20 @@ import Footer from './Footer';
 import Header from './Header';
 import Content from '../pages/Content';
 import {AiOutlineUp, AiOutlineDown} from 'react-icons/ai';
-function App() {
+function App({children}) {
   return (
-    <div id="wrap">
-      <div className='bg'>
+    <>
+    
+    <div id='bg'>
             
-      </div>
+      
+    <div id="wrap">
+      
       <Header />
-      <Content />
+
+      {/* <Content /> */}
+      {children}
+
       <div id='scroll'>
         <div className='top'>
           <p><AiOutlineUp /></p>
@@ -19,8 +25,10 @@ function App() {
           <p><AiOutlineDown /></p>
         </div>
       </div>
+
       <Footer />
-    </div>
+    </div></div>
+    </>
   );
 }
 

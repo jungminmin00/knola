@@ -1,9 +1,20 @@
 @use './header.scss';
 @use './content.scss';
 @use './footer.scss';
+@use './notfound.scss';
+@use './brand.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 // @use './variable';
-a{ text-decoration: none;}
-
+a{ 
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+#bg{
+    background:url('../api/images/bg.jpg') no-repeat center center; 
+    background-size: 100vw;
+    background-attachment: fixed;
+    // z-index: 100;
+}
 #scroll{
     // position: fixed;
     position: fixed;

@@ -1,19 +1,25 @@
+import { Link } from "react-router-dom";
+
 export default function Header(){
     return(
         <header>
             <div id="header">
-                <h1><a href="#"><img src="./images/logo.png" alt="knola" /></a></h1>
+                <h1>
+                    <Link to="/"><img src="./images/logo.png" alt="knola" /></Link>
+                </h1>
                 <div className="sub">
                     <ul>
-                        <li><a href="#">wishlist</a></li>
-                        <li><a href="#">login</a></li>
+                        <li>
+                            <Link to="wishlist">wishlist</Link>
+                        </li>
+                        <li><Link to="*">login</Link></li>
                     </ul>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">brand</a></li>
+                        <li><Link to="brand">brand</Link></li>
                         <li className="store">
-                            <a href="#">store</a>
+                            <Link to="list">store</Link>
                             <ul className="hide">
                             {/* <ul > */}
                                 <li><a href="#">all</a></li>

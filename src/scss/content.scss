@@ -11,6 +11,7 @@
 .gallery{
     width: 100%;
     position: relative;
+    background-color: #fff;
     .show{
         width: 100%;
         overflow: hidden;
@@ -42,10 +43,13 @@
     }
 }
 .ment{
-    width: $content;
+    background-color: #fff;
+    >div{
+        width: $content;
     @include margin;
     padding: $basic*10 0;
     text-align: center;
+    }
     dl{
         dt{
             font-size: $nomal;
@@ -70,10 +74,13 @@
     }
 }
 .section{
-    width: $content;
-    @include margin;
-    @include layout;
-    @include cPadding;
+    background-color: #fff;
+    >div{
+        width: $content;
+        @include margin;
+        @include layout;
+        @include cPadding;
+    }
     section{
         width:  33.3333%/* 433.333px */;
         text-align: center;
@@ -94,54 +101,59 @@
     }
 }
 .bestProducts{
-    @include cPadding;
-    width: $content;
-    @include margin;
-    text-align: center;
-    &:last-child{
-        padding: 100px 0;
-    }
-    h3{
-        font-size: $title;
-        text-transform: uppercase;
-        letter-spacing:5px;
-        margin-bottom: $basic*3;
-    }
-    >p{
-        font-size: $small;
-        color: $gray;
-        margin-bottom: $basic*3;
-    }
-    >ul{
-        @include layout($justify:space-evenly);
-        img{
-            width: $big*2;
-            height: $big*2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid rgba(68, 68, 68, 0.1);
+    background-color: #fff;
+    >div{
+        @include cPadding;
+        width: $content;
+        @include margin;
+        text-align: center;
+        &:last-child{
+            padding: 100px 0;
+        }
+        h3{
+            font-size: $title;
+            text-transform: uppercase;
+            letter-spacing:5px;
             margin-bottom: $basic*3;
         }
-        dl{
-            >dt{
-                font-size: $nomal;
-                padding-bottom: 15px;
-                border-bottom: 1px solid rgba(68, 68, 68, 0.2);
-                margin-bottom: $basic*2;
+        >p{
+            font-size: $small;
+            color: $gray;
+            margin-bottom: $basic*3;
+        }
+        >ul{
+            @include layout($justify:space-evenly);
+            img{
+                width: $big*2;
+                height: $big*2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgba(68, 68, 68, 0.1);
+                margin-bottom: $basic*3;
             }
-            >dd{
-                font-size: $large;
-                font-weight: bold;
+            dl{
+                >dt{
+                    font-size: $nomal;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+                    margin-bottom: $basic*2;
+                }
+                >dd{
+                    font-size: $large;
+                    font-weight: bold;
+                }
             }
         }
     }
 }
 .banner{
-    background-color: $gray;
+    // background-color: $gray;
     padding: 120px 0 0 0;
-    background: rgba(0,0,0,0)   url('../api/images/bg.jpg') no-repeat center center; 
-    background-size: 100vw;
+    background-color: rgba(0, 0, 0, 0);
+    // background-color: gray;
+    // background: rgba(0,0,0,0)   url('../api/images/bg.jpg') no-repeat center center; 
+    // background-size: 100vw;
     // position: fixed;
     >h3{
         color: #fff;

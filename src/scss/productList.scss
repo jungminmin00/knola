@@ -1,0 +1,93 @@
+@use './common' as *;
+@use './mixin' as *;
+@use './variable' as *;
+#productList{
+    background-color: #fff;
+    position: relative;
+    // @include cPadding;
+    /* search */
+    .item{
+        @include cPadding;
+        width: $content;
+        @include margin;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: $big;
+                img{
+                    width: $big*2;
+                    height: $big*2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba(68, 68, 68, 0.1);
+                    margin-bottom: $basic*3;
+                }
+                dl{
+                    >dt{
+                        font-size: $nomal;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+                        margin-bottom: $basic*2;
+                    }
+                    >dd{
+                        font-size: $large;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+#search{
+    width: $content;
+    @include margin;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+    @include cPadding;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    >div{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        color: $gray;
+        input{
+            width: 90%;
+            height: $basic*4;
+            border: 1px solid rgba(1, 1, 1, 0.4);
+            padding-left: 10px;
+        }
+    }
+    button{
+        width: $basic*15;
+        height: 35px;
+        color: $gray;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid rgba(1, 1, 1, 0.4);
+    }
+    .btn{
+        position: absolute;
+        width: $basic*15;
+        right: 235px; top: $big;
+        background-color: #fff;
+        li{
+            padding: 15px;
+            border: 1px solid rgba(1, 1, 1, 0.2);
+            color: $gray;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+  

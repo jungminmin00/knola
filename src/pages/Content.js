@@ -1,6 +1,11 @@
 import {AiOutlineLeft, AiOutlineRight} from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import BestProductList from '../components/BestProductList';
+import NewProductList from '../components/NewProductList';
 
 export default function Content(){
+    // const [sort, setSort] = useState('')
+
     return(
         /* content */
         <div id="content">
@@ -40,7 +45,7 @@ export default function Content(){
             </div>
             {/* section */}
             <div className='section'>
-                {/* <div> */}
+                <div>
                     {/* 1 */}
                     <section>
                         <figure>
@@ -77,64 +82,15 @@ export default function Content(){
                             </figcaption>
                         </figure>
                     </section>
-                {/* </div> */}
+                </div>
             </div>
             {/* bestProducts */}
             <div className='bestProducts'>
-                {/* <div> */}
+                <div>
                     <h3>best Products</h3>
                     <p>크놀라의 인기상품입니다</p>
-                    <ul>
-                        {/* 1 */}
-                        <li>
-                            <figure>
-                                <img src='' alt=''/>
-                                <figcaption>
-                                    <dl>
-                                        <dt>건무화과 & 호두 그래놀라</dt>
-                                        <dd>11000원</dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        {/* 2 */}
-                        <li>
-                            <figure>
-                                <img src='' alt=''/>
-                                <figcaption>
-                                    <dl>
-                                        <dt>건무화과 & 호두 그래놀라</dt>
-                                        <dd>11000원</dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        {/* 3 */}
-                        <li>
-                            <figure>
-                                <img src='' alt=''/>
-                                <figcaption>
-                                    <dl>
-                                        <dt>건무화과 & 호두 그래놀라</dt>
-                                        <dd>11000원</dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        {/* 4 */}
-                        <li>
-                            <figure>
-                                <img src='' alt=''/>
-                                <figcaption>
-                                    <dl>
-                                        <dt>건무화과 & 호두 그래놀라</dt>
-                                        <dd>11000원</dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
-                    </ul>
-                {/* </div> */}
+                    <BestProductList />
+                </div>
             </div>
             <div className='banner'>
                 <h3>brand</h3>
@@ -149,64 +105,21 @@ export default function Content(){
                                 뉴욕에서 시작된 크놀라의 특별한 100% 핸드메이드 방식, 철저한 공정을 통해<br/>
                                 항상 신선하고 건강한 그래놀라를 만들고 있습니다.
                             </p>
-                            <p><button type='button'>Knola Story</button></p>
+                            <p>
+                                <button type='button'>
+                                    <Link to="brand">Knola Story</Link>
+                                </button>
+                            </p>
                         </figcaption>
                     </figure>
                 </div>
             </div>
             <div className='bestProducts'>
-                <h3>new Products</h3>
-                <p>크놀라의 새로운 상품을 만나보세요</p>
-                <ul>
-                    {/* 1 */}
-                    <li>
-                        <figure>
-                            <img src='' alt=''/>
-                            <figcaption>
-                                <dl>
-                                    <dt></dt>
-                                    <dd></dd>
-                                </dl>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    {/* 2 */}
-                    <li>
-                        <figure>
-                            <img src='' alt=''/>
-                            <figcaption>
-                                <dl>
-                                    <dt></dt>
-                                    <dd></dd>
-                                </dl>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    {/* 3 */}
-                    <li>
-                        <figure>
-                            <img src='' alt=''/>
-                            <figcaption>
-                                <dl>
-                                    <dt></dt>
-                                    <dd></dd>
-                                </dl>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    {/* 4 */}
-                    <li>
-                        <figure>
-                            <img src='' alt=''/>
-                            <figcaption>
-                                <dl>
-                                    <dt></dt>
-                                    <dd></dd>
-                                </dl>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
+                <div>
+                    <h3>new Products</h3>
+                    <p>크놀라의 새로운 상품을 만나보세요</p>
+                    <NewProductList />
+                </div>
             </div>
         </div>
     );

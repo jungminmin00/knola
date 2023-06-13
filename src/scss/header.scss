@@ -1,13 +1,19 @@
 @use './common' as *;
 @use './mixin' as *;
 @use './variable' as *;
-
-#wrap>header{
+header{
+    background-color: #fff;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+}
+#wrap #header{
     width: $content;
     // background-color: pink;
     @include margin;
     @include cPadding;
-    @include layout;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
     h1{
         text-align: center;
         margin-bottom: $basic*8;
