@@ -34,10 +34,14 @@
                         padding-bottom: 15px;
                         border-bottom: 1px solid rgba(68, 68, 68, 0.2);
                         margin-bottom: $basic*2;
+                        color: $gray;
+                        text-align: center;
                     }
                     >dd{
                         font-size: $large;
                         font-weight: bold;
+                        color: $gray;
+                        text-align: center;
                     }
                 }
             }

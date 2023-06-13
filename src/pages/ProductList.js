@@ -2,21 +2,24 @@ import '../scss/productList.scss';
 import Search from '../components/Search';
 import data from '../api/products.json';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Products({item}){
     return(
         <li
             key={item.id}
         >
-            <figure>
-                <img src={item.pic} alt={item.name}/>
-                <figcaption>
-                    <dl>
-                        <dt>{item.name}</dt>
-                        <dd>{item.price}원</dd>
-                    </dl>
-                </figcaption>
-            </figure>
+            <Link to={`/list/${item.slug}`}>
+                <figure>
+                    <img src={item.pic} alt={item.name}/>
+                    <figcaption>
+                        <dl>
+                            <dt>{item.name}</dt>
+                            <dd>{item.price}원</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </Link>
         </li>
     );
 }
