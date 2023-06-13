@@ -36,7 +36,7 @@ export default function ProductList(){
         <div id="productList">
             <Search 
                 sortBy = {sortBy}
-                setSortBy = {setSortBy}
+                onChangeSortBy = {(data) => setSortBy(data)}
             />
             <div className='item'>
                 <ul>

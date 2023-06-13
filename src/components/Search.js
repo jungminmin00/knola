@@ -2,20 +2,19 @@ import { useState } from 'react';
 import {AiFillCaretDown, AiOutlineSearch} from 'react-icons/ai';
 import {BsCheckSquare} from 'react-icons/bs';
 
-function Dropdown({toggle}){
+function Dropdown({toggle,sortBy ,onChangeSortBy}){
     if(!toggle){
         return null;
     }
     return(
         <ul className='btn'>
-            <li>인기순 <BsCheckSquare /></li>
-            <li>최신순 <BsCheckSquare /></li>
-            <li>높은가격 <BsCheckSquare /></li>
-            <li>낮은가격 <BsCheckSquare /></li>
+            <li onClick={() => onChangeSortBy('salesNumber')}>인기순 {sortBy === 'salesNumber' && <BsCheckSquare />}</li>
+            <li onClick={() => onChangeSortBy('birth')}>최신순 {sortBy === 'birth' && <BsCheckSquare />}</li>
+            <li onClick={() => onChangeSortBy('price')}>높은가격 {sortBy === 'price' && <BsCheckSquare />}</li>
         </ul>
     );
 }
-export default function Search(){
+export default function Search({sortBy, onChangeSortBy}){
     const [toggle, setToggle] = useState(false);
 
     return(
@@ -29,6 +28,8 @@ export default function Search(){
             ><AiFillCaretDown /></button>
             <Dropdown 
                 toggle = {toggle}
+                sortBy = {sortBy}
+                onChangeSortBy = {(data) => onChangeSortBy(data)}
             />
         </div>
     );
