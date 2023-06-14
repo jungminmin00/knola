@@ -10,7 +10,6 @@ export default function NewProductList(){
         }
       );  
     newData.length = 4;
-    console.log(newData);
     
     return(
         <ul>

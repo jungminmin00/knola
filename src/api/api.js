@@ -1,10 +1,5 @@
-import data from './products.json';
+import courses from './products.json';
 
-// export function getData(){
-//     if(!)
-//     return(
-//         <>
-
-//         </>
-//     );
-// }
+export function getCourseBySlug(couseSlug){
+    return courses.find((couse) => couse.slug === couseSlug)   
+}

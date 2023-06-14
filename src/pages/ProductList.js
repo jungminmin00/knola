@@ -9,7 +9,9 @@ function Products({item}){
         <li
             key={item.id}
         >
-            <Link to={`/list/${item.slug}`}>
+            <Link 
+                to={`/list/${item.slug}`}
+            >
                 <figure>
                     <img src={item.pic} alt={item.name}/>
                     <figcaption>

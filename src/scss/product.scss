@@ -10,31 +10,65 @@
         padding-top: $basic*5;
         >figure{
             display: flex;
+            justify-content: space-between;
+            margin-bottom: $basic*5;
             >div{
-                width: 50%;
+                width: $big*5;
+                height: $big*5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border: 1px solid rgba(1, 1, 1, 0.2);
                 img{
-                    // width: ;
+                    width: 100%;
                 }
             }
             >figcaption{
                 width: 50%;
+                border-left: 1px solid rgba(1, 1, 1, 0.1);
+                text-align: center;
+                padding: $big 0 0 0;
                 >dl{
-                    padding-left: $big*2;
                     >dt{
                         margin-bottom: $basic*4;
                     }
                     >dd{
-                        margin-bottom: $basic*4;
+                        margin-bottom: $big;
                     }
                 }
                 >p{
-                    text-align: center;
+                    // text-align: center;
                     >button{
                         border: none;
                         font-size: $large;
                         padding: $basic $basic*3;
                     }
+                }
+            }
+        }
+    }
+}
+#review{
+    padding: 0 $basic*5 0 $basic*5;
+    border-top: 1px solid rgba(1, 1, 1, 0.1);
+    li{
+        @include cPadding;
+        padding-left: $basic*5;
+        border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+        color: $gray;
+        >dl{
+            position: relative;
+            dt{
+                font-size: $large;
+                font-weight: bold;
+                margin-bottom: $basic*3;
+            }
+            dd{
+                font-size: $nomal;
+                &:last-child{
+                    position: absolute;
+                    font-size: $small;
+                    right: $basic*5; top: 0;
                 }
             }
         }

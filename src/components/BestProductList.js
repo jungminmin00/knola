@@ -10,7 +10,6 @@ export default function BestProductList(){
         }
       );  
     bestData.length = 4;
-    console.log(bestData);
     
     return(
         <ul>
