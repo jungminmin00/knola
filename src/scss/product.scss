@@ -4,4 +4,39 @@
 
 #product{
     background-color: #fff;
+    >div{
+        width: $content;
+        @include margin;
+        padding-top: $basic*5;
+        >figure{
+            display: flex;
+            >div{
+                width: 50%;
+                border: 1px solid rgba(1, 1, 1, 0.2);
+                img{
+                    // width: ;
+                }
+            }
+            >figcaption{
+                width: 50%;
+                >dl{
+                    padding-left: $big*2;
+                    >dt{
+                        margin-bottom: $basic*4;
+                    }
+                    >dd{
+                        margin-bottom: $basic*4;
+                    }
+                }
+                >p{
+                    text-align: center;
+                    >button{
+                        border: none;
+                        font-size: $large;
+                        padding: $basic $basic*3;
+                    }
+                }
+            }
+        }
+    }
 }
