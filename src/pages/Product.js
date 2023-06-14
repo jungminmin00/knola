@@ -13,7 +13,6 @@ export default function Product(){
         addWishList(course?.slug);
         navigate('/wishlist');
     }
-
     return(
         <div id='product'>
             <div>
