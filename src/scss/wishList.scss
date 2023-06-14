@@ -1,0 +1,54 @@
+@use './common' as *;
+@use './mixin' as *;
+@use './variable' as *;
+
+#wishlist{
+    background-color: #fff;
+    >ul{
+        width: $content;
+        padding-top: $basic*5;
+        @include margin;
+        >li{
+            border-top: 1px solid rgba(1, 1, 1, 0.1);
+            border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+            // @include cPadding;
+            padding: $basic*5;
+            display: flex;
+            justify-content: space-between;
+            >div{
+                width: $big;
+                >img{
+                    border: 1px solid rgba(1, 1, 1, 0.1);
+                    width: $big;
+                }
+            }
+            figure{
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                color: $gray;
+                align-items: center;
+                dl{
+                    display: flex;
+                    width: $big*4;
+                    justify-content: space-between;
+                    align-items: center;
+                    dt{
+                        font-size: $large;
+                    }
+                    dd{
+                        font-size: $nomal;
+                    }
+                }
+                >p{
+                    button{
+                        border: none;
+                        font-size: $nomal;
+                        padding: 10px 30px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
