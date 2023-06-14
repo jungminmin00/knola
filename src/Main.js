@@ -6,6 +6,7 @@ import Product from './pages/Product';
 import WishList from './pages/WishList';
 import NotFound from './pages/NotFound';
 import Brand from './pages/Brand';
+import Review from './pages/Review';
 
 
 export default function Main(){
@@ -20,6 +21,7 @@ export default function Main(){
                     </Route>
                     <Route path='wishlist' element={<WishList />} />
                     <Route path='brand' element={<Brand />}/>
+                    <Route path='review' element={<Review />}/>
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </App>

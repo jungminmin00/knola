@@ -27,7 +27,7 @@ export default function Header(){
                                 <li><a href="#">snack</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">review</a></li>
+                        <li><Link to="review">review</Link></li>
                         <li><a href="#">event</a></li>
                     </ul>
                 </nav>
