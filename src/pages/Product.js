@@ -1,14 +1,19 @@
 import '../scss/product.scss';
-import { getCourseBySlug } from '../api/api';
-import { useParams } from 'react-router';
+import { getCourseBySlug, addWishList } from '../api/api';
+import { useNavigate, useParams } from 'react-router';
 import { useState } from 'react';
 
 export default function Product(){
     const {couseSlug} = useParams();
     const course = getCourseBySlug(couseSlug);
-    // console.log(course.topic);
     const [reviewData, setReviewData] = useState(course.topic);
-    console.log(reviewData);
+
+    const navigate = useNavigate();
+    const goWishList = () =>{
+        addWishList(course?.slug);
+        navigate('/wishlist');
+    }
+
     return(
         <div id='product'>
             <div>
@@ -21,7 +26,11 @@ export default function Product(){
                             <dt>{course.name}</dt>
                             <dd>{course.price} 원</dd>
                         </dl>
-                        <p><button type='button'>장바구니 추가</button></p>
+                        <p>
+                            <button 
+                                type='button'
+                                onClick={goWishList}
+                            >장바구니 추가</button></p>
                     </figcaption>
                 </figure>
                 <div id='review'>
