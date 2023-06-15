@@ -88,6 +88,7 @@ export default function Content(){
             <div className='bestProducts'>
                 <div>
                     <h3>best Products</h3>
+                    <div className='hn'></div>
                     <p>크놀라의 인기상품입니다</p>
                     <BestProductList />
                 </div>
@@ -117,6 +118,7 @@ export default function Content(){
             <div className='bestProducts'>
                 <div>
                     <h3>new Products</h3>
+                    <div className='hn'></div>
                     <p>크놀라의 새로운 상품을 만나보세요</p>
                     <NewProductList />
                 </div>

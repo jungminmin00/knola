@@ -37,11 +37,19 @@ export default function Product(){
                         {reviewData.map(
                             ({review}) => ( /* key값 에러 :  중괄호 넣어 해결! */
                                 <li key={review.reId}>
-                                    <dl>
-                                        <dt>{review.title}</dt>
-                                        <dd>{review.detail}</dd>
-                                        <dd>{review.date}</dd>
-                                    </dl>
+                                    <figure>
+                                        <div>
+                                            <img src={`.${review.photo}`} alt={review.title} />
+                                        </div>
+                                        <figcaption>
+                                            <dl>
+                                                <dt>{review.title}</dt>
+                                                <dd>{review.detail}</dd>
+                                                <dd>{review.date}</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                    
                                 </li>
                             )
                         )}

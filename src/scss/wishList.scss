@@ -4,6 +4,20 @@
 
 #wishlist{
     background-color: #fff;
+    padding-top: $basic*5;
+    h3{
+        text-align: center;
+        font-size: $large;
+        color: $gray;
+        font-weight: bold;
+        margin-bottom: $basic*3;
+    }
+    >div{
+        width: $basic*5;
+        background-color: $gray;
+        height: 2px;
+        margin: 0 auto;
+    }
     >ul{
         width: $content;
         padding-top: $basic*5;

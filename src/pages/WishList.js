@@ -16,7 +16,10 @@ export default function WishList(){
   }
   return(
     <div id="wishlist">
-      <h1>나의 저장소</h1>
+      <h3>장바구니 목록
+      </h3>
+      <div></div>
+      
       <ul>
         {courses.map((course) => (
           <li key={course.slug}>

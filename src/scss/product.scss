@@ -62,21 +62,41 @@
         padding-left: $basic*5;
         border-bottom: 1px solid rgba(1, 1, 1, 0.1);
         color: $gray;
-        >dl{
-            position: relative;
-            dt{
-                font-size: $large;
-                font-weight: bold;
-                margin-bottom: $basic*3;
+        figure{display: flex; justify-content: space-between;
+            >div{
+                width: $big;
+                background-color: pink;
+                height: $big;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: rgba(1, 1, 1, 0.2);
+                overflow: hidden;
+                >img{
+                    width: 100%;
+                }
             }
-            dd{
-                font-size: $nomal;
-                &:last-child{
-                    position: absolute;
-                    font-size: $small;
-                    right: $basic*5; top: 0;
+            figcaption{
+                width: $big*10;
+                dl{
+                    position: relative;
+                    dt{
+                        font-size: $large;
+                        font-weight: b$basic*3;
+                        margin-bottom: $basic*3;
+                    }
+                    dd{
+                        font-size: $nomal;
+                        line-height: 30px;
+                        &:last-child{
+                            position: absolute;
+                            font-size: $small;
+                            right: $basic*5; top: 0;
+                        }
+                    }
                 }
             }
         }
+        
     }
 }
