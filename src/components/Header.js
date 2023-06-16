@@ -12,7 +12,7 @@ export default function Header(){
                         <li>
                             <Link to="wishlist">wishlist</Link>
                         </li>
-                        <li><Link to="*">login</Link></li>
+                        <li><Link to="login">login</Link></li>
                     </ul>
                 </div>
                 <nav>
@@ -28,7 +28,7 @@ export default function Header(){
                             </ul>
                         </li>
                         <li><Link to="review">review</Link></li>
-                        <li><a href="#">event</a></li>
+                        <li><Link to="event">event</Link></li>
                     </ul>
                 </nav>
             </div>

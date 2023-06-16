@@ -4,6 +4,10 @@ export function getCourseBySlug(couseSlug){
     return courses.find((couse) => couse.slug === couseSlug)   
 }
 
+export function getcourseByReview(courseId){
+    return courses.find((rev) => rev.reId === courseId)
+}
+
 const WISHLIST_KEY = 'wishlist';
 const wishlist = JSON.parse(localStorage.getItem(WISHLIST_KEY) || '{}') 
 

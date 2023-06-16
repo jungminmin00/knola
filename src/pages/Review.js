@@ -1,22 +1,37 @@
 import { useState } from 'react';
-import data from '../api/products.json';
-import $ from 'jquery';
-import './Review_';
+import reviews from '../api/reviews.json';
+import '../scss/review.scss';
+import { Link } from 'react-router-dom';
+
 export default function(){
-    const [reviewData, setReviewData] = useState([]);
-    console.log(data[1].topic)
-    
-    // topic반복문으로 가져오기 => map으로 하기
-
+    const [review, setreview] = useState(reviews);
     return(
-        <div id="review">
-            <h3>REVIEW</h3>
-            <p>상품 사용후기입니다.</p>
-            <ul>
-                <li>
-
-                </li>
-            </ul>
+        <div id="reviews">
+            <div>
+                <h3>REVIEW</h3>
+                <p>상품 사용후기입니다.</p>
+                <ul>
+                    
+                    {
+                        review.map((item) =>(
+                            
+                                <li key={item.reId}>
+                                    <Link to={`/review/${item.slug}`}                                    >
+                                        <figure>
+                                            <div>
+                                                <img src={`.${item.photo}`} alt="photo"/>
+                                            </div>
+                                            <figcaption>
+                                                <p>{item.title}</p>
+                                            </figcaption>
+                                        </figure>
+                                    </Link>  
+                                </li>    
+                              
+                        ))
+                    }
+                </ul>
+            </div>
         </div>
     );
 }

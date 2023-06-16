@@ -1,0 +1,25 @@
+@use './common' as *;
+@use './mixin' as *;
+@use './variable' as *;
+
+#eventList{
+    background-color: #fff;
+    >div{
+        width:$content;
+        @include margin;
+        padding-top: $basic*5;
+        display: flex;
+        justify-content: center;
+        >ul{
+            display: flex;
+            flex-direction:column;
+            >li{
+                width: 80%;
+                padding: $basic*2 $basic*3; 
+                border-top: 1px solid rgba(1, 1, 1, 0.3);
+                border-bottom: 1px solid rgba(1, 1, 1, 0.3);
+                
+            }
+        }
+    }
+}
