@@ -4,34 +4,33 @@ import { useState } from 'react';
 import '../scss/eventList.scss';
 
 export default function EventList(){
-    console.log(data);
     const [sortBy, setSortBy] = useState('slug');
+    // const [sortBy, setSortBy] = useState(data);
 
     const list = data.sort(
         (a, b)=>{
             return a[sortBy]>b[sortBy]? -1 : 1;
         }
     )
-    console.log(list);
     return(
         <div id="eventList">
             <div>
                 <ul>
                     {
-                        list.map(
+                        data.map(
                             (item) => (
-                                <Link to={`./${item.slug}`}>
-                                    <dl>
-                                        <dt>{item.title}</dt>
-                                        <dd>{item.start}</dd>
-                                    </dl>
-                                </Link>
+                                <li key={item.evId}>
+                                    <Link to={`/event/${item.slug}`}>
+                                        <dl>
+                                            <dt>{item.title}</dt>
+                                            <dd>{item.start}</dd>
+                                        </dl>
+                                    </Link>
+                                </li>
                             )
                         )
                     }
-                    <li>
-                        
-                    </li>
+                    
                 </ul>
             </div>
         </div>

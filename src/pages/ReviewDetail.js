@@ -1,6 +1,4 @@
 import { useParams } from "react-router";
-import { getcourseByReview } from "../api/api";
-import { useContext } from "react";
 import reviewData from '../api/reviews.json';
 import { Link } from "react-router-dom";
 

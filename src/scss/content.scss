@@ -121,30 +121,41 @@
             color: $gray;
             margin-bottom: $basic*3;
         }
-        >ul{
-            @include layout($justify:space-evenly);
-            img{
-                width: $big*2;
-                height: $big*2;
+        >div.show{
+            width: $content;
+            overflow: hidden;
+            ul{
+                width: 4550px;
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid rgba(68, 68, 68, 0.1);
-                margin-bottom: $basic*3;
-            }
-            dl{
-                >dt{
-                    font-size: $nomal;
-                    padding-bottom: 15px;
-                    border-bottom: 1px solid rgba(68, 68, 68, 0.2);
-                    margin-bottom: $basic*2;
+                >li{
+                    width: 25%;
+                    display: flex;
+                    justify-content: center;
                 }
-                >dd{
-                    font-size: $large;
-                    font-weight: bold;
+                img{
+                    width: $big*2;
+                    height: $big*2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba(68, 68, 68, 0.1);
+                    margin-bottom: $basic*3;
+                }
+                dl{
+                    >dt{
+                        font-size: $nomal;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+                        margin-bottom: $basic*2;
+                    }
+                    >dd{
+                        font-size: $large;
+                        font-weight: bold;
+                    }
                 }
             }
         }
+        
     }
 }
 .banner{

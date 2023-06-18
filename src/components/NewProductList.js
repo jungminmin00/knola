@@ -9,9 +9,10 @@ export default function NewProductList(){
           return (a['birth'] > b['birth'] ? -1 : 1);
         }
       );  
-    newData.length = 4;
     
     return(
+        <div className='show'>
+            
         <ul>
             {
                 newData.map((item) => ( 
@@ -35,5 +36,6 @@ export default function NewProductList(){
             }
             
         </ul>
+        </div>
     );
 }

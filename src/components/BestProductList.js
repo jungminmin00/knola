@@ -9,9 +9,10 @@ export default function BestProductList(){
           return (a['salesNumber'] > b['salesNumber'] ? -1 : 1);
         }
       );  
-    bestData.length = 4;
     
     return(
+        <div className='show'>
+            
         <ul>
             {
                 bestData.map((item) => ( 
@@ -35,5 +36,6 @@ export default function BestProductList(){
             }
             
         </ul>
+        </div>
     );
 }
