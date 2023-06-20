@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom';
 import BestProductList from '../components/BestProductList';
 import NewProductList from '../components/NewProductList';
 
+// swiper
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import SwiperCore, { Navigation, Pagination } from "swiper";
+// import "swiper/swiper.scss";
+// import "swiper/components/navigation/navigation.scss";
+// import "swiper/components/pagination/pagination.scss";
+// SwiperCore.use([Navigation, Pagination])
+
 export default function Content(){
     // const [sort, setSort] = useState('')
 

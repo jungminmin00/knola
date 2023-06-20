@@ -14,15 +14,15 @@ function App({children}) {
       
       <Header />
 
-      {/* <Content /> */}
+      <Content />
       {children}
 
       <div id='scroll'>
         <div className='top'>
-          <p><AiOutlineUp /></p>
+          <p><a href='#header'><AiOutlineUp /></a></p>
         </div>
         <div className='down'>
-          <p><AiOutlineDown /></p>
+          <p><a href='#footer'><AiOutlineDown /></a></p>
         </div>
       </div>
 
