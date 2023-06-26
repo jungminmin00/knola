@@ -3,7 +3,26 @@ import Footer from './Footer';
 import Header from './Header';
 import Content from '../pages/Content';
 import {AiOutlineUp, AiOutlineDown} from 'react-icons/ai';
+import { useEffect } from 'react';
+import $ from "jquery";
+
 function App({children}) {
+  useEffect(() => {
+    $('.top a').click(function(){
+      const navA = $(this).attr('href');
+      const posY = $(navA).offset().top;
+      const headerT = $('header').innerHeight();
+      $('html, body').animate({scrollTop: posY - headerT});
+      return false;
+    })
+    $('.down a').click(function(){
+      const navA = $(this).attr('href');
+      const posY = $(navA).offset().top;
+      const headerT = $('footer').innerHeight();
+      $('html, body').animate({scrollTop: posY - headerT});
+      return false;
+    })
+  })
   return (
     <>
     
