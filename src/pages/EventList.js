@@ -25,8 +25,8 @@ export default function EventList(){
                                         data = {list}
                                     >
                                         <dl>
-                                            <dt>{item.title}</dt>
                                             <dd>{item.evId}</dd>
+                                            <dt>{item.title}</dt>
                                             <dd>{item.start}</dd>
                                         </dl>
                                     </Link>

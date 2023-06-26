@@ -28,14 +28,16 @@ export default function Search({sortBy, onChangeSortBy, onChangeWord ,word}){
                     onChange = {(e) => onChangeWord(e.target.value)}
                 />
             </div>
-            <button type="button"
-                onClick={() => setToggle(!toggle)}
-            ><AiFillCaretDown /></button>
-            <Dropdown 
-                toggle = {toggle}
-                sortBy = {sortBy}
-                onChangeSortBy = {(data) => onChangeSortBy(data)}
-            />
+            <div className='dropBox'>
+                <button type="button"
+                    onClick={() => setToggle(!toggle)}
+                ><AiFillCaretDown /></button>
+                <Dropdown 
+                    toggle = {toggle}
+                    sortBy = {sortBy}
+                    onChangeSortBy = {(data) => onChangeSortBy(data)}
+                />
+            </div>
         </div>
     );
 }

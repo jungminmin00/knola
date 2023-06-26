@@ -4,12 +4,11 @@ import BestProductList from '../components/BestProductList';
 import NewProductList from '../components/NewProductList';
 
 // swiper
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import SwiperCore, { Navigation, Pagination } from "swiper";
-// import "swiper/swiper.scss";
-// import "swiper/components/navigation/navigation.scss";
-// import "swiper/components/pagination/pagination.scss";
-// SwiperCore.use([Navigation, Pagination])
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function Content(){
     // const [sort, setSort] = useState('')
@@ -21,11 +20,24 @@ export default function Content(){
             {/* gallery */}
             <div className="gallery">
                 <div className="show">
-                    <ul className='all'>
-                        <li><img src="./images/gallery01.jpg" alt="슬라이드01" /></li>
-                        <li><img src="./images/gallery02.jpg" alt="슬라이드02" /></li>
-                        <li><img src="./images/gallery03.jpg" alt="슬라이드03" /></li>
-                    </ul>
+                    <Swiper 
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        }}
+                        pagination={{
+                        clickable: true,
+                        }}
+                        navigation={true}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide><img src="./images/gallery01.jpg" alt="슬라이드01" /></SwiperSlide>
+                        <SwiperSlide><img src="./images/gallery02.jpg" alt="슬라이드02" /></SwiperSlide>
+                        <SwiperSlide><img src="./images/gallery03.jpg" alt="슬라이드03" /></SwiperSlide>
+                    </Swiper>
                 </div>
                 <div className='galleryBtn'>
                     <p className="prev"><button type="button"><AiOutlineLeft /></button></p>

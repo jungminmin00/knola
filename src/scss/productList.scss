@@ -71,25 +71,30 @@
             padding-left: 10px;
         }
     }
-    button{
+    .dropBox{
         width: $basic*15;
-        height: 35px;
-        color: $gray;
-        text-align: center;
-        background-color: #fff;
-        border: 1px solid rgba(1, 1, 1, 0.4);
-    }
-    .btn{
-        position: absolute;
-        width: $basic*15;
-        right: 425px; top: $big;
-        background-color: #fff;
-        li{
-            padding: 15px;
-            border: 1px solid rgba(1, 1, 1, 0.2);
+        position: relative;
+        button{
+            width: $basic*15;
+            height: 35px;
             color: $gray;
-            display: flex;
-            justify-content: space-between;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid rgba(1, 1, 1, 0.4);
+        }
+        .btn{
+            position: absolute;
+            width: $basic*15;
+            right: 0; top: $basic*5;
+            background-color: #fff;
+            li{
+                padding: 15px;
+                font-size: 15px;
+                border: 1px solid rgba(1, 1, 1, 0.2);
+                color: $gray;
+                display: flex;
+                justify-content: space-between;
+            }
         }
     }
 }

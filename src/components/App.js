@@ -14,7 +14,6 @@ function App({children}) {
       
       <Header />
 
-      <Content />
       {children}
 
       <div id='scroll'>

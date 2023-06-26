@@ -218,3 +218,12 @@
     margin: 0 auto;
     margin-bottom: $basic*3;
 }
+
+.swiper-slide{
+    img{
+        width: 100%;
+    }
+}
+.swiper-pagination{
+    padding-bottom: 10px;
+}
