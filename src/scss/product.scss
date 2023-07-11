@@ -100,3 +100,106 @@
         
     }
 }
+
+
+
+@include tablet{
+    #product{
+        background-color: #fff;
+        >div{
+            width: $content;
+            @include margin;
+            padding-top: $basic*5;
+            >figure{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: $basic*5;
+                >div{
+                    width: $big*5;
+                    height: $big*5;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba(1, 1, 1, 0.2);
+                    img{
+                        width: 100%;
+                    }
+                }
+                >figcaption{
+                    width: 50%;
+                    border-left: 1px solid rgba(1, 1, 1, 0.1);
+                    text-align: center;
+                    // padding: $big 0 0 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    >dl{
+                        >dt{
+                            margin-bottom: $basic*4;
+                        }
+                        >dd{
+                            margin-bottom: $big;
+                        }
+                    }
+                    >p{
+                        // text-align: center;
+                        >button{
+                            background-color: $red;
+                            color: #fff;
+                            border: none;
+                            font-size: $large;
+                            padding: $basic $basic*3;
+                            border-radius: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #review{
+        padding: 0 $basic*5 0 $basic*5;
+        border-top: 1px solid rgba(1, 1, 1, 0.1);
+        li{
+            @include cPadding;
+            padding-left: $basic*5;
+            border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+            color: $gray;
+            figure{display: flex; justify-content: space-between;
+                >div{
+                    width: $big;
+                    background-color: #fff;
+                    height: $big;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: rgba(1, 1, 1, 0.2);
+                    overflow: hidden;
+                    >img{
+                        width: 100%;
+                    }
+                }
+                figcaption{
+                    width: $big*10;
+                    dl{
+                        position: relative;
+                        dt{
+                            font-size: $large;
+                            font-weight: b$basic*3;
+                            margin-bottom: $basic*3;
+                        }
+                        dd{
+                            font-size: $nomal;
+                            line-height: 30px;
+                            &:last-child{
+                                position: absolute;
+                                font-size: $small;
+                                right: $basic*5; top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

@@ -100,3 +100,44 @@
 }
 
   
+@include tablet {
+    #productList{
+        /* search */
+        .item{
+            width: $tcontent;
+            ul{
+                li{
+                    width: 33.33333%;
+                    img{
+                        width: $basic*16;
+                        height: $basic*16;
+                    }
+                }
+            }
+        }
+    }
+    #search{
+        width: $tcontent;
+        >div{
+            input{
+                width: 80%;
+                height: $basic*3;
+                font-size: $small;
+            }
+        }
+        .dropBox{
+            width: $basic*10;
+            .btn{
+                width: $basic*11;
+                li{
+                    padding: 15px;
+                    font-size: 13px;
+                    border: 1px solid rgba(1, 1, 1, 0.2);
+                    color: $gray;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
