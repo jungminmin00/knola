@@ -3,6 +3,10 @@
 @use './footer.scss';
 @use './notfound.scss';
 @use './brand.scss';
+@use './mediaQuery.scss';
+// @use './_mixin.scss' as *;
+// @use './_variable.scss' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 // @use './variable';
 a{ 
@@ -42,3 +46,20 @@ a{
     }
     
 }
+
+
+// media query
+  
+// @include desktop {
+// }
+  
+// @include tablet {
+//     #wrap #header{
+//         width: $tcontent;
+//     }
+// }
+// @include mobile {
+//     .img-card {
+//       width: 100px;
+//     }
+// }
