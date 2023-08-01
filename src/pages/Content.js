@@ -44,6 +44,33 @@ export default function Content(){
                     <p className="next"><button type="button"><AiOutlineRight /></button></p>
                 </div>
             </div>
+            {/* mgallery */}
+            <div className="mGallery">
+                <div className="show">
+                    <Swiper 
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        }}
+                        pagination={{
+                        clickable: true,
+                        }}
+                        navigation={true}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide><img src="./images/mGallery01.jpg" alt="슬라이드01" /></SwiperSlide>
+                        <SwiperSlide><img src="./images/mGallery02.jpg" alt="슬라이드02" /></SwiperSlide>
+                        <SwiperSlide><img src="./images/mGallery03.jpg" alt="슬라이드03" /></SwiperSlide>
+                    </Swiper>
+                </div>
+                <div className='galleryBtn'>
+                    <p className="prev"><button type="button"><AiOutlineLeft /></button></p>
+                    <p className="next"><button type="button"><AiOutlineRight /></button></p>
+                </div>
+            </div>
             {/* ment */}
             <div className='ment'>
                 <div>
@@ -115,6 +142,7 @@ export default function Content(){
             </div>
             <div className='banner'>
                 <h3>brand</h3>
+                <div className='hn'></div>
                 <div className='bannerMain'>
                     <figure>
                         <img src='./images/banner.jpg' alt=''/>

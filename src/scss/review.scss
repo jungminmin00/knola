@@ -121,3 +121,41 @@
         }
     }
 }
+
+
+
+// media query
+@include tablet{
+    #reviews{
+        >div{
+            width: $tcontent;
+            >ul{
+                li{
+                    width: 33.33333%;
+                    figure{
+                        width: $basic*18;
+                        >div{
+                            height: $basic*18;
+                        }
+                        figcaption{
+                            width: auto;
+                            height: $big;
+                            >p{
+                                overflow: hidden;  		
+                                text-overflow: ellipsis;   
+                                white-space: nowrap; 		
+                                word-break:break-all;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+    #ReviewDetail{
+        >div{
+            width: $tcontent;
+        }
+    }
+}

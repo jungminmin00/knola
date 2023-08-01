@@ -48,6 +48,7 @@
                     justify-content: space-between;
                     align-items: center;
                     dt{
+                        width: 70%;
                         font-size: $large;
                     }
                     dd{
@@ -63,6 +64,79 @@
                         background-color: $red;
                         color: #fff;
                         
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include tablet{
+    #wishlist{
+        // background-color: #fff;
+        // padding-top: $basic*5;
+        h3{
+            // text-align: center;
+            // font-size: $large;
+            // color: $gray;
+            // font-weight: bold;
+            // margin-bottom: $basic*3;
+        }
+        >div{
+            // width: $basic*5;
+            // background-color: $gray;
+            // height: 2px;
+            // margin: 0 auto;
+        }
+        >ul{
+            width: $tcontent;
+            // padding-top: $basic*5;
+            // @include margin;
+            >li{
+                // border-top: 1px solid rgba(1, 1, 1, 0.1);
+                // border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+                // @include cPadding;
+                padding: $basic*1;
+                display: flex;
+                justify-content: space-between;
+                >div{
+                    width: $big;
+                    >img{
+                        border: 1px solid rgba(1, 1, 1, 0.1);
+                        width: $big;
+                    }
+                }
+                figure{
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    color: $gray;
+                    align-items: center;
+                    dl{
+                        display: flex;
+                        width: $big*4;
+                        justify-content: start;
+                        align-items: center;
+                        dt{
+                            font-size: $nomal;
+                            font-weight: bold;
+                        }
+                        dd{
+                            font-size: $nomal;
+                        }
+                    }
+                    >p{
+                        button{
+                            border: none;
+                            // width: 80px;
+                            font-size: $small;
+                            // font-weight: bold;
+                            padding: 10px 20px;
+                            border-radius: 20px;
+                            background-color: $red;
+                            color: #fff;
+                            
+                        }
                     }
                 }
             }

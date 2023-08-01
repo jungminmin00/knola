@@ -4,6 +4,7 @@
 @use './notfound.scss';
 @use './brand.scss';
 @use './mediaQuery.scss';
+@use "./_mixin" as *;
 // @use './_mixin.scss' as *;
 // @use './_variable.scss' as *;
 
@@ -63,3 +64,8 @@ a{
 //       width: 100px;
 //     }
 // }
+@include mobile{
+    #bg{
+        background: none;
+    }
+}

@@ -15,16 +15,16 @@ export default function Header(){
             <div>
                     <div className="sub">
                         <ul>
-                            <li>
+                            <li className="sub01">
                                 <Link to="wishlist">wishlist</Link>
                             </li>
-                            <li><Link to="login">login</Link></li>
+                            <li className="sub02"><Link to="login">login</Link></li>
                         </ul>
                     </div>
                     <nav>
                         <ul>
-                            <li><Link to="brand">brand</Link></li>
-                            <li className="store">
+                            <li className="nav01"><Link to="brand">brand</Link></li>
+                            <li className="store nav02">
                                 <Link to="list">store</Link>
                                 <ul className="hide">
                                 {/* <ul > */}
@@ -33,8 +33,8 @@ export default function Header(){
                                     <li><a href="#">snack</a></li>
                                 </ul>
                             </li>
-                            <li><Link to="review">review</Link></li>
-                            <li><Link to="event">event</Link></li>
+                            <li className="nav03"><Link to="review">review</Link></li>
+                            <li className="nav04"><Link to="event">event</Link></li>
                         </ul>
                     </nav>
                     <p><AiOutlineCloseSquare /></p>

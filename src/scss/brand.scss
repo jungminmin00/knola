@@ -7,3 +7,13 @@
     display: flex;
     justify-content: center;
 }
+@include mobile{
+    #brand{
+        // background-color: #fff;
+        // display: flex;
+        // justify-content: center;
+        img{
+            width: 100%;
+        }
+    }
+}

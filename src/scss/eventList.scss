@@ -23,6 +23,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    color: $gray;
                 }
             }
         }
@@ -34,6 +35,7 @@
     padding-top: $basic*5;
     >div{
         width: $content;
+        text-align: center;
         @include margin;
         display: flex;
         flex-direction: column;
@@ -51,6 +53,41 @@
         }
         >p{
             font-size: $small;
+        }
+    }
+}
+
+
+// media query
+@include tablet{
+    #eventList{
+        background-color: #fff;
+        >div{
+            width:$tcontent;
+            >ul{
+                li{
+                    width: auto;
+                    padding: $basic*2 $basic*2;
+                    dt{
+                        font-size: $small;
+                    }
+                    dd{
+                        width: 90%;
+                    }
+                    dd:last-child{
+                     display: none;   
+                    }
+                }
+            }
+        }
+    }
+    
+    #event{
+        >div{
+            width: $tcontent;
+            h3{
+                font-size: $nomal;
+            }
         }
     }
 }

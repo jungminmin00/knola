@@ -11,6 +11,7 @@ import ReviewDetail from './pages/ReviewDetail';
 import Login from './pages/Login';
 import EventList from './pages/EventList';
 import Event from './pages/Event';
+// import '../public/mediaQuery.js';
 
 
 export default function Main(){

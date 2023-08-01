@@ -48,3 +48,23 @@
         }
     }
 }
+
+
+
+// media query
+@include tablet{
+    #login{
+        >div{
+            width: $tcontent;
+        }
+    }
+}
+
+// media query m
+@include mobile{
+    #login{
+        >div{
+            width: $mcontent;
+        }
+    }
+}

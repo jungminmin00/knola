@@ -141,3 +141,56 @@
         }
     }
 }
+
+@include mobile{
+    #productList{
+        /* search */
+        .item{
+            width: $mcontent;
+            ul{
+                li{
+                    width: 50%;
+                    img{
+                        width: $basic*16;
+                        height: $basic*16;
+                    }
+                    dl{
+                        dt{
+                            font-size: $small;
+                        }
+                        dd{
+                            font-size: $nomal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #search{
+        width: $mcontent;
+        justify-content: space-between;
+        >div{
+            width: 80%;
+            input{
+                width: 90%;
+                margin-left: 5px;
+                height: $basic*3;
+                font-size: $small;
+            }
+        }
+        .dropBox{
+            width: $basic*4;
+            .btn{
+                width: $basic*11;
+                li{
+                    padding: 8px;
+                    font-size: 13px;
+                    border: 1px solid rgba(1, 1, 1, 0.2);
+                    color: $gray;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
