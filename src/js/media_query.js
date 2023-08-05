@@ -10,6 +10,7 @@ $(function(){
         nav();
     }else if(windowW < 579 ){
       // 모바일
+      nav();
     }
   }    
 )
@@ -26,6 +27,22 @@ $(function(){
         ], 500);      
     }); 
     document.querySelector('header div:last-child p').addEventListener('click', function(){
+        document.querySelector('header div:last-child').animate([
+            { left: "0%", opacity : "100%" },
+            { left: "0%", opacity : "0%" }
+        ], 500).finished.then(function(){
+            document.querySelector('header div:last-child').style.display = 'none';
+        })
+    });
+    document.querySelector('header div:last-child nav > ul').addEventListener('click', function(){
+        document.querySelector('header div:last-child').animate([
+            { left: "0%", opacity : "100%" },
+            { left: "0%", opacity : "0%" }
+        ], 500).finished.then(function(){
+            document.querySelector('header div:last-child').style.display = 'none';
+        })
+    });
+    document.querySelector('header div:last-child .sub ul').addEventListener('click', function(){
         document.querySelector('header div:last-child').animate([
             { left: "0%", opacity : "100%" },
             { left: "0%", opacity : "0%" }

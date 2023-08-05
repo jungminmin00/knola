@@ -63,31 +63,31 @@ export default function Footer(){
                     <li>
                         <dl>
                             <dt>COMPANY NAME : </dt>
-                            <dd>(주)주식회사</dd>
+                            <dd>&nbsp;(주)주식회사</dd>
                         </dl>
                     </li>
                     <li>
                         <dl>
                             <dt>CEO : </dt>
-                            <dd>홍길동</dd>
+                            <dd>&nbsp;홍길동</dd>
                         </dl>
                     </li>
                     <li>
                         <dl>
                             <dt>ADDRESS : </dt>
-                            <dd>서울특별시</dd>
+                            <dd>&nbsp;서울특별시</dd>
                         </dl>
                     </li>
                     <li>
                         <dl>
                             <dt>COMPANY REG.NO : </dt>
-                            <dd>123-12-12345</dd>
+                            <dd>&nbsp;123-12-12345</dd>
                         </dl>
                     </li>
                     <li>
                         <dl>
                             <dt>CPO : </dt>
-                            <dd>김길동</dd>
+                            <dd>&nbsp;김길동</dd>
                         </dl>
                     </li>
                 </ul>

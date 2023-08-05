@@ -8,6 +8,9 @@
     #scroll{
         display: none;
     }
+    footer > .mfooter{
+        display: none;
+    }
 
     // header
     #wrap #header{
@@ -316,7 +319,7 @@
     .banner{
         padding: $basic*5 0 0 0;
         background-color: #ffff;
-        margin-bottom: $basic*28;
+        margin-bottom: $basic*20;
         >.hn{
             display: block;
         }
@@ -384,16 +387,17 @@
 
     // footer
     #wrap>footer{
-        display: none;
+        // display: none;
         @include margin;
         @include cPadding;
+        padding: 0;
         background-color: #fff;
     }
     #footer{
         display: none;
     }
-    .mfooter{
-        display: none;
+    footer > .mfooter{
+        display: flex;
     }
     
 }

@@ -91,3 +91,43 @@
         }
     }
 }
+
+// 모바일
+@include mobile{
+    #eventList{
+        background-color: #fff;
+        >div{
+            width:$mcontent;
+            margin-bottom: 50px;
+            >ul{
+                li{
+                    width: auto;
+                    padding: $basic*2 $basic*2;
+                    dt{
+                        font-size: 11px;
+                    }
+                    dd{
+                        width: 90%;
+                        font-size: $small;
+                        line-height: 18px;
+                    }
+                    dd:last-child{
+                     display: none;   
+                    }
+                }
+            }
+        }
+    }
+    
+    #event{
+        >div{
+            width: $mcontent;
+            h3{
+                font-size: $small;
+            }
+            >p{
+                margin-bottom: $basic*5;
+            }
+        }
+    }
+}

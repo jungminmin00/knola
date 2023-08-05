@@ -77,5 +77,14 @@ footer>.mfooter{
     justify-content: space-evenly;
     @include cPadding;
     // background-color: pink;
-
+    font-size: $small;
+    >ul{
+        >li{
+            >dl{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 5px;
+            }
+        }
+    }
 }

@@ -159,3 +159,88 @@
         }
     }
 }
+
+
+// 모바일
+@include mobile{
+    #reviews{
+        >div{
+            width: $mcontent;
+            >ul{
+                li{
+                    width: 50%;
+                    figure{
+                        width: $basic*15;
+                        >div{
+                            height: $basic*15;
+                        }
+                        figcaption{
+                            width: auto;
+                            height: $big;
+                            >p{
+                                overflow: hidden;  		
+                                text-overflow: ellipsis;   
+                                white-space: nowrap; 		
+                                word-break:break-all;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+    #ReviewDetail{
+        >div{
+            width: $mcontent;
+            >figure{
+                display: flex;
+                flex-direction: column;
+                // justify-content: center;
+                align-items: center;
+                text-align: center;
+                >div{
+                    width: $big*4;
+                    height: $big*4;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba(1, 1, 1, 0.2);
+                    margin-bottom: $basic*5;
+                    overflow:hidden;
+                    >img{
+                        width: 100%;
+                    }
+                }
+                >figcaption{
+                    text-align:center;
+                    >dl{
+                        margin-bottom: $basic*5;
+                        >dt{
+                            font-size: $large;
+                            margin-bottom: $basic*5;
+                            font-weight: bold;
+                        }
+                        >dd{
+                            font-size: $nomal;
+                            line-height: $basic*3;
+                        }
+                    }
+                    >p{
+                        button{
+                            border:none;
+                            background-color:$red;
+                            padding: $basic $basic*3;
+                            border-radius: 25px;
+                            margin-bottom: $basic*5;
+                            // color:#fff;
+                            a{
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
